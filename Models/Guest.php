@@ -7,6 +7,8 @@ class Guest{
     private $last_name;
     private $dni;
     private $paid;
+    private $is_in;
+    private $in_charge;
 
     public function __construct($id_guest, $name, $last_name, $dni, $paid)
     {
@@ -35,6 +37,18 @@ class Guest{
 
     public function getPaid(){
         return $this->paid;
+    }
+
+    public function getIn_charge(){
+        return $this->in_charge;
+    }
+
+    public function getIs_in(){
+        return $this->is_in;
+    }
+
+    public function setIs_in($is_in){
+        $this->is_in = $is_in;
     }
 
     public function setPaid($paid){
