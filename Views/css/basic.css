@@ -77,7 +77,7 @@ footer{
     display: inline-block;
     margin:0;
     height: 70px;
-    background-color: #C10206;
+    background-color: #010A10;
     position: fixed;
     bottom: 0;
 }
@@ -95,7 +95,7 @@ footer{
 
 /*HEADER*/
 header{
-    background-color: #C10206;
+    background-color: #010A10;
     border-bottom: 1px solid #DFE2DB;
     padding: .5em 1em;
     display: flex;
