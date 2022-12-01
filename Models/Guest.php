@@ -6,13 +6,15 @@ class Guest{
     private $name;
     private $last_name;
     private $dni;
+    private $paid;
 
-    public function __construct($id_guest, $name, $last_name, $dni)
+    public function __construct($id_guest, $name, $last_name, $dni, $paid)
     {
         $this->id_guest = $id_guest;
         $this->name = $name;
         $this->last_name = $last_name;
         $this->dni = $dni;
+        $this->paid = $paid;
     }
 
     public function getId(){
@@ -29,5 +31,13 @@ class Guest{
 
     public function getDni(){
         return $this->dni;
+    }
+
+    public function getPaid(){
+        return $this->paid;
+    }
+
+    public function setPaid($paid){
+        $this->paid = $paid;
     }
 }
