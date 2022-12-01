@@ -9,7 +9,7 @@
     define("IMG_PATH", FRONT_ROOT.VIEWS_PATH . "img/");
     // Constantes para la base de datos
     define("DB_HOST", "localhost");
-    define("DB_NAME", "CondarcoFest");   // Nombre de la base de datos
+    define("DB_NAME", "condarcofest");   // Nombre de la base de datos
     define("DB_USER", "root");
     define("DB_PASS", "");
 
