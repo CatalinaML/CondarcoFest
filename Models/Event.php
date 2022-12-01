@@ -2,6 +2,7 @@
 namespace Models;
 
 class Event{
+    private $id_event;
     private $name;
     private $date;
     private $price;
@@ -24,5 +25,14 @@ class Event{
 
     public function getDate(){
         return $this->date;
+    }
+
+    public function getIdEvent()
+    {
+       return $this->id_event;
+    }
+
+    public function setIdEvent($id_event){
+        $this->id_event = $id_event;
     }
 }

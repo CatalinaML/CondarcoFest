@@ -9,10 +9,11 @@ class Guest{
     private $paid;
     private $is_in;
     private $in_charge;
+    private $id_event;
 
-    public function __construct($id_guest, $name, $last_name, $dni, $paid)
+    public function __construct($in_charge, $name, $last_name, $dni, $paid)
     {
-        $this->id_guest = $id_guest;
+        $this->in_charge = $in_charge;
         $this->name = $name;
         $this->last_name = $last_name;
         $this->dni = $dni;
@@ -27,7 +28,7 @@ class Guest{
         return $this->name;
     }
 
-    public function getLasName(){
+    public function getLastName(){
         return $this->last_name;
     }
 
@@ -43,6 +44,14 @@ class Guest{
         return $this->in_charge;
     }
 
+    public function getIdEvent(){
+        return $this->id_event;
+    }
+
+    public function setIdEvent($id_event){
+        $this->id_event = $id_event;
+    }
+
     public function getIs_in(){
         return $this->is_in;
     }
@@ -53,5 +62,9 @@ class Guest{
 
     public function setPaid($paid){
         $this->paid = $paid;
+    }
+
+    public function setId($id_guest){
+        $this->id_guest = $id_guest;
     }
 }
